@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--
+  CS 360/560 - Introduction to Computer Graphics, Fall 2026
+  Project 5 - Babylon.js Boxes
+  Author: Shyam Patel
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Babylon.js Boxes - Shyam Patel</title>
+
+        <!-- Babylon.js (only the libraries this scene needs - keeps it fast on phones) -->
+        <script src="https://cdn.babylonjs.com/babylon.js"></script>
+        <script src="https://cdn.babylonjs.com/materialsLibrary/babylonjs.materials.min.js"></script>
+        <script src="https://cdn.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+
+        <script defer src="Baby_Boxes.js"></script>
+        <style>
+            html,
+            body {
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            #renderCanvas {
+                width: 100%;
+                height: 100%;
+                touch-action: none;
+            }
+
+            #canvasZone {
+                width: 100%;
+                height: 100%;
+            }
+
+            #nameTag {
+                position: absolute;
+                top: 12px;
+                left: 12px;
+                padding: 6px 12px;
+                font: bold 18px Arial, sans-serif;
+                color: #fff;
+                background: rgba(0, 0, 0, 0.6);
+                border-radius: 6px;
+                pointer-events: none;
+                z-index: 10;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="nameTag">Shyam Patel</div>
+        <div id="canvasZone"><canvas id="renderCanvas"></canvas></div>
+      
+    </body>
+</html>
